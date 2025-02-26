@@ -1,0 +1,25 @@
+package Main;
+
+import java.util.Scanner;
+
+public class Prefixos_sufixos {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite uma string: ");
+        String input = scanner.nextLine();
+
+        System.out.println("\nPrefixos:");
+        for (int i = 1; i <= input.length(); i++) {
+            System.out.println(input.substring(0, i));
+        }
+
+        System.out.println("\nSufixos:");
+        for (int i = 0; i < input.length(); i++) {
+            System.out.println(input.substring(i));
+        }
+
+        scanner.close();
+    }
+}
+
